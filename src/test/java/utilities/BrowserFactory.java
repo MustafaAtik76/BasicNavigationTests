@@ -12,7 +12,7 @@ public class BrowserFactory {
     public static WebDriver getDriver(String browserType) {
 
 
-        if ((System.getProperty("os.name").equals("Windows 10") && browserType.equals("safari")) || (System.getProperty("os.name").equals("Mac") && browserType.equals("edge"))) {
+        if ((System.getProperty("os.name").equals("Windows 11") && browserType.equals("safari")) || (System.getProperty("os.name").equals("Mac") && browserType.equals("edge"))) {
             return null;
         }
 
