@@ -25,7 +25,8 @@ public class BrowserFactory {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
         } else if (browserType.equalsIgnoreCase("edge")) {
-            System.setProperty("webdriver.edge.driver", "C://EdgeDriver.exe");
+            WebDriverManager.edgedriver().setup();
+            //System.setProperty("webdriver.edge.driver", "C://EdgeDriver.exe");
             return new EdgeDriver();
         }  else if(browserType.equals("Safari")) {
             WebDriverManager.safaridriver().setup();
