@@ -1,4 +1,4 @@
-package utilities;
+package com.cydeo.utilities;
 
 public class StringUtility {
 

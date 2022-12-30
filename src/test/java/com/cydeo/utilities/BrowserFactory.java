@@ -1,4 +1,4 @@
-package utilities;
+package com.cydeo.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ public class BrowserFactory {
     public static WebDriver getDriver(String browserType) {
 
 
-        if ((System.getProperty("os.name").equals("Windows 11") && browserType.equals("safari")) || (System.getProperty("os.name").equals("Mac") && browserType.equals("edge"))) {
+        if ((System.getProperty("os.name").equalsIgnoreCase("Windows 11") && browserType.equals("safari")) || (System.getProperty("os.name").equalsIgnoreCase("Mac") && browserType.equals("edge"))) {
             return null;
         }
 

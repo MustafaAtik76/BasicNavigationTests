@@ -1,9 +1,9 @@
-package tests;
+package com.cydeo.tests;
 
 import org.openqa.selenium.WebDriver;
-import utilities.StringUtility;
+import com.cydeo.utilities.StringUtility;
 
-import static utilities.BrowserFactory.getDriver;
+import static com.cydeo.utilities.BrowserFactory.getDriver;
 
 public class NavigationTests {
 
